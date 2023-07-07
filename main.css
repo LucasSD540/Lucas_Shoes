@@ -1,0 +1,257 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Roboto', sans-serif;
+}
+
+header {
+    background-color: #B0E0E6;
+    color: #fff;
+    padding: 16px 0;
+}
+
+header h1 {
+    font-size: 2.5rem;
+    font-weight: bold;
+    font-style: italic;
+}
+
+.nav-links li a {
+    color: #fff;
+    text-decoration: none;
+    font-size: 1.5rem;
+    font-weight: bold;
+    padding: 0 8px;
+}
+
+.nav-links ul {
+    list-style: none;
+    display: flex;
+}
+
+.container {
+    max-width: 1280px;
+    width: 100%;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+section > .container {
+    margin-top: 36px;
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
+}
+
+.sobre > .container h2 {
+    color: #B0E0E6;
+    border-bottom: 2px solid #B0E0E6;
+    font-size: 2rem;
+}
+
+section > .container p {
+    padding-top: 32px;
+}
+
+section > .container img {
+    height: 300px;
+    width: 100%;
+    max-width: 300px;
+}
+
+.img-txt {
+    max-width: 980px;
+    padding-left: 32px;
+}
+
+.produtos > .container {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 64px;
+}
+
+.produtos > .container h2 {
+    color: #B0E0E6;
+    border-bottom: 2px solid #B0E0E6;
+    width: 100%;
+    font-size: 2rem;
+}
+
+.container .img-produtos {
+    display: grid;
+    grid-template-columns: repeat(4, 25%);
+    grid-gap: 2%;
+}
+
+.container .img-produtos article img {
+    margin-top: 48px;
+}
+
+.container .img-produtos article h3 {
+    font-size: 1.5rem;
+}
+
+.container .img-produtos article p {
+    padding-bottom: 16px;
+}
+
+.container .img-produtos article button {
+    background-color: #B0E0E6;
+    width: 100%;
+    border: none;
+    border-radius: 5px;
+    height: 30px;
+    cursor: pointer;
+    font-size: 1rem;
+}
+
+@media screen and (max-width: 640px) {
+
+    header h1 {
+        font-size: 2rem;
+        padding-left: 16px;
+    }
+
+    .nav-links ul {
+        display: block;
+        padding-right: 16px;
+    }
+
+    .nav-links li a {
+        font-size: 1rem;
+    }
+
+    section > .container {
+        display: block;
+    }
+
+    .img-txt {
+        padding-left: 0;
+        width: 80%;
+        margin: 0 auto;
+    }
+
+    section > .container img {
+        position: relative;
+        width: 80%;
+    }
+
+    .produtos > .container h2 {
+        display: block;
+        width: 80%;
+        margin: 0 auto;
+    }
+
+    .container .img-produtos {
+        display: block;
+    }
+
+    .container .img-produtos article h3 {
+        font-size: 1.2rem;
+        width: 80%;
+        display: block;
+        margin: 0 auto;
+    }
+
+    img {
+        display: block;
+        margin: 16px auto;
+    }
+
+    .container .img-produtos article p {
+        margin: 0 auto;
+        display: block;
+        width: 80%;
+    }
+
+    .container .img-produtos article button {
+        width: 80%;
+        display: block;
+        margin: 0 auto;
+    }
+}
+
+@media screen and (min-width: 641px) and (max-width: 960px) {
+    header > .container {
+        width: 80%;
+    }
+
+    section > .container img {
+        display: block;
+        margin: 0 auto;
+        max-width: 700px;
+        height: 500px;
+        width: 80%;
+        margin-bottom: 36px;
+    }
+
+    .img-txt {
+        width: 80%;
+        margin: 0 auto;
+        padding-left: 0;
+    }
+
+    section > .container {
+        margin-top: 36px;
+        display: block;
+    }
+
+    .produtos > .container h2 {
+        display: block;
+        width: 80%;
+        margin: 0 auto;
+    }
+
+    .container .img-produtos {
+        display: grid;
+        grid-template-columns: repeat(2, 50%);
+        grid-gap: 2%;
+        width: 80%;
+        margin: 0 auto;
+    }
+
+    .container .img-produtos article img {
+        height: 328px;
+        width: 100%;
+    }
+}
+
+@media screen and (min-width: 961px) and (max-width: 1279px) {
+
+    header > .container {
+        width: 80%;
+    }
+
+    .sobre > .container {
+        width: 80%;
+    }
+
+    .sobre > .container img {
+        width: 30%;
+    }
+
+    .img-txt {
+        width: 70%;
+    }
+
+    .produtos > .container h2 {
+        display: block;
+        width: 80%;
+        margin: 0 auto;
+    }
+
+    .container .img-produtos {
+        display: grid;
+        grid-template-columns: repeat(4, 23.5%);
+        grid-gap: 2%;
+        width: 80%;
+        margin: 0 auto;
+    }
+
+    .container .img-produtos article h3 {
+        font-size: 1.3rem;
+    }
+}
